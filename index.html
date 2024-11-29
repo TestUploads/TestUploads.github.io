@@ -1,0 +1,32 @@
+<?php
+// Start output buffering to allow PHP to send HTML content
+ob_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Olympics 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        marquee {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <marquee direction="right">Welcome to the Paris Olympics 2024!</marquee>
+    <h1>Announcement brought to you by: Faith Angela Marco</h1>
+</body>
+</html>
+<?php
+// End output buffering and send the content
+ob_end_flush();
+?>
